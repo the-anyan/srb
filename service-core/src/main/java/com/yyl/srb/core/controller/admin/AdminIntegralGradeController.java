@@ -26,6 +26,8 @@ public class AdminIntegralGradeController {
     @Resource
     private IntegralGradeService integralGradeService;
 
+    private final static Logger log = LoggerFactory.getLogger(AdminIntegralGradeController.class);
+
     @GetMapping("/list")
     @ApiOperation("积分等级列表")
     public R listAll() {
@@ -35,6 +37,11 @@ public class AdminIntegralGradeController {
         List<IntegralGrade> list = integralGradeService.list();
         return R.ok().data("list", list);
     }
+//    @GetMapping("/list")
+//    @ApiOperation("积分等级列表")
+//    public List<IntegralGrade> listAll(){
+//        return integralGradeService.list();
+//    }
 
     @DeleteMapping("/remove/{id}")
     @ApiOperation(value = "根据id删除积分等级", notes = "逻辑删除")
@@ -72,4 +79,29 @@ public class AdminIntegralGradeController {
             return R.error().message("保存失败");
         }
     }
+
+    @ApiOperation("根据ID获取积分等级")
+    @GetMapping("/get/{id}")
+    public R getById(@ApiParam(value = "数据ID",required = true)
+                     @PathVariable Long id){
+        IntegralGrade integralGrade = integralGradeService.getById(id);
+        if (integralGrade != null){
+            return R.ok().data("record",integralGrade);
+        }else {
+            return R.error().message("数据不存在");
+        }
+    }
+    @ApiOperation("更新积分等级")
+    @PutMapping("/update")
+    public R updateById(
+            @ApiParam(value = "积分等级对象",required = true)
+            @RequestBody IntegralGrade integralGrade){
+        boolean result = integralGradeService.updateById(integralGrade);
+        if (result){
+            return R.ok().message("修改成功！");
+        }else {
+            return R.error().message("修改失败");
+        }
+    }
+
 }
