@@ -30,6 +30,10 @@ public class Dict implements Serializable {
       @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
+    @ApiModelProperty(value = "是否包含子节点")
+    @TableField(exist = false)// 数据库表中忽略
+    private boolean hasChildren;
+
     @ApiModelProperty(value = "上级id")
     private Long parentId;
 

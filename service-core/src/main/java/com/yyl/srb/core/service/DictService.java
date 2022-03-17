@@ -19,7 +19,12 @@ public interface DictService extends IService<Dict> {
 
     //excel上传文件
     void importData(InputStream inputStream);
+
     //excel下载文件
     List<ExcelDictDTO> listDictData();
+
+    //数据字典列表展示
+    List<Dict> listByParentId(Long parentId);
+
 
 }

@@ -5,6 +5,7 @@ import com.yyl.common.exception.BusinessException;
 import com.yyl.common.result.R;
 import com.yyl.common.result.ResponseEnum;
 import com.yyl.srb.core.pojo.dto.ExcelDictDTO;
+import com.yyl.srb.core.pojo.entity.Dict;
 import com.yyl.srb.core.service.DictService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -20,6 +21,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.util.List;
 
 @Api(tags = "数据字典管理")
 @RestController
@@ -30,6 +32,16 @@ public class AdminDictController {
 
     @Resource
     private DictService dictService;
+
+    @ApiOperation("根据上级id获取子节点数据列表")
+    @GetMapping("/listByParentId/{parentId}")
+    public R listByParentId(@ApiParam(value = "上级节点id", required = true)
+                            @RequestParam Long parentId) {
+        List<Dict> dicts = dictService.listByParentId(parentId);
+        return R.ok().data("dictList",dicts);
+
+    }
+
 
     @ApiOperation("Excel批量导入数据字典")
     @PostMapping("/import")
