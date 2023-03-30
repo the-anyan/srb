@@ -9,13 +9,17 @@ import com.yyl.srb.core.pojo.dto.ExcelDictDTO;
 import com.yyl.srb.core.service.DictService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.tomcat.util.ExceptionUtils;
 import org.springframework.beans.BeanUtils;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.Resource;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * <p>
@@ -28,6 +32,7 @@ import java.util.List;
 @Slf4j
 @Service
 public class DictServiceImpl extends ServiceImpl<DictMapper, Dict> implements DictService {
+    @Resource RedisTemplate redisTemplate;
 
     //    此处添加了事务处理，默认情况下rollbackFor = RuntimeException.class
     @Transactional(rollbackFor = {Exception.class})
@@ -56,11 +61,35 @@ public class DictServiceImpl extends ServiceImpl<DictMapper, Dict> implements Di
     //根据父节点获取子节点列表
     @Override
     public List<Dict> listByParentId(Long parentId) {
-        List<Dict> dictList = baseMapper.selectList(new QueryWrapper<Dict>().eq("parent_id", parentId));
+
+        //先查询redis中是否存在数据列表
+        List<Dict> dictList = null;
+        try {
+            dictList = (List<Dict>) redisTemplate.opsForValue().get("srb:core:dictList:" + parentId);
+            if (dictList != null){
+                log.info("从Redis中取值");
+                return dictList;
+            }
+        }catch (Exception e){
+            log.error("Redis服务异常："+ e.getStackTrace());//此处不抛出异常，继续执行后面的代码
+        }
+        log.info("从数据库中取值");
+
+        dictList = baseMapper.selectList(new QueryWrapper<Dict>().eq("parent_id", parentId));
         dictList.forEach(dict -> {
             //如果有子节点，则非叶子结点，表示此结点有叶子节点
             dict.setHasChildren(this.hasChildren(parentId));
+
         });
+
+        //将数据传入Redis
+        try{
+            redisTemplate.opsForValue().set("srb:score:dictList:"+parentId,dictList,5, TimeUnit.MINUTES);
+            log.info("数据存入Redis");
+        } catch (Exception e){
+            log.error("Redis服务异常："+ e.getStackTrace());//此处不抛出异常，继续执行后面的代码
+
+        }
         return dictList;
     }
 

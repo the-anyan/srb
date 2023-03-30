@@ -10,10 +10,12 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 积分等级管理接口
@@ -25,6 +27,8 @@ import java.util.List;
 public class AdminIntegralGradeController {
     @Resource
     private IntegralGradeService integralGradeService;
+    @Resource
+    private RedisTemplate redisTemplate;
 
     private final static Logger log = LoggerFactory.getLogger(AdminIntegralGradeController.class);
 
@@ -35,6 +39,8 @@ public class AdminIntegralGradeController {
 //        log.warn("warning!!!");
 //        log.error("it's a error");
         List<IntegralGrade> list = integralGradeService.list();
+        //向数据库中存储string类型的键值对，过期时间是五分钟
+//        redisTemplate.opsForValue().set("dict",list,5, TimeUnit.MINUTES);
         return R.ok().data("list", list);
     }
 //    @GetMapping("/list")
@@ -71,6 +77,7 @@ public class AdminIntegralGradeController {
 //        if (integralGrade.getBorrowAmount() == null){
 //            throw new BusinessException(ResponseEnum.BORROW_AMOUNT_NULL_ERROR);
 //        }
+            //断言方式获取
         Assert.notNull(integralGrade.getBorrowAmount(), ResponseEnum.BORROW_AMOUNT_NULL_ERROR);
         boolean save = integralGradeService.save(integralGrade);
         if (save){
