@@ -1,0 +1,7 @@
+2023-03-31 15:49:30 [INFO ] main StartupInfoLogger.java:61 com.yyl.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 3.855 seconds (JVM running for 4.979)
+2023-03-31 15:49:56 [ERROR] http-nio-8110-exec-8 DictServiceImpl.java:74 com.yyl.srb.core.service.impl.DictServiceImpl Redis服务异常：[Ljava.lang.StackTraceElement;@5c818b53
+2023-03-31 15:49:56 [INFO ] http-nio-8110-exec-8 DictServiceImpl.java:76 com.yyl.srb.core.service.impl.DictServiceImpl 从数据库中取值
+2023-03-31 15:49:57 [ERROR] http-nio-8110-exec-8 DictServiceImpl.java:90 com.yyl.srb.core.service.impl.DictServiceImpl Redis服务异常：[Ljava.lang.StackTraceElement;@3fc142fe
+2023-03-31 15:59:01 [ERROR] http-nio-8110-exec-3 DictServiceImpl.java:74 com.yyl.srb.core.service.impl.DictServiceImpl Redis服务异常：[Ljava.lang.StackTraceElement;@1a029814
+2023-03-31 15:59:01 [INFO ] http-nio-8110-exec-3 DictServiceImpl.java:76 com.yyl.srb.core.service.impl.DictServiceImpl 从数据库中取值
+2023-03-31 15:59:01 [ERROR] http-nio-8110-exec-3 DictServiceImpl.java:90 com.yyl.srb.core.service.impl.DictServiceImpl Redis服务异常：[Ljava.lang.StackTraceElement;@2f4896f

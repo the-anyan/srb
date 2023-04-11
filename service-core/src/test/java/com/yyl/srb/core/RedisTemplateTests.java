@@ -20,11 +20,11 @@ import java.util.concurrent.TimeUnit;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 //@RunWith(SpringRunner.class)
-@SpringBootTest
+//@SpringBootTest
 //@ContextConfiguration
 //@WebAppConfiguration
 //@TestPropertySource(value = "classpath*:application.yml")
-//@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class RedisTemplateTests {
     @Resource
     private RedisTemplate redisTemplate;

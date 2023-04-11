@@ -35,4 +35,24 @@ public class Swagger2Config {
                 .build();
 
     }
+    @Bean
+    public Docket apiConfig(){
+        return new Docket(DocumentationType.SWAGGER_2)
+                .groupName("api")
+                .apiInfo(apiInfo())
+                .select()
+                //只显示Admin路径下的页面
+                .paths(Predicates.and(PathSelectors.regex("/api/.*")))
+                .build();
+
+    }
+
+    private ApiInfo apiInfo(){
+        return new ApiInfoBuilder()
+                .title("尚融宝-API文档")
+                .description("本文档描述了尚融宝接口")
+                .version("1.0")
+                .contact(new Contact("CodeGril","http://yyl.com","story_2020@163.com"))
+                .build();
+    }
 }

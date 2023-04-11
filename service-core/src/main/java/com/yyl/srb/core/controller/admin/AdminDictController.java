@@ -11,7 +11,6 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import lombok.extern.slf4j.Slf4j;
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -19,7 +18,6 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.List;
 
@@ -34,7 +32,7 @@ public class AdminDictController {
     private DictService dictService;
 
     @ApiOperation("根据上级id获取子节点数据列表")
-    @GetMapping("/listByParentId/{parentId}")
+    @GetMapping("/listByParentId")
     public R listByParentId(@ApiParam(value = "上级节点id", required = true)
                             @RequestParam Long parentId) {
         List<Dict> dicts = dictService.listByParentId(parentId);

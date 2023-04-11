@@ -19,6 +19,13 @@ public enum ResponseEnum {
     SERVLET_ERROR(-102, "servlet请求异常"),
     UPLOAD_ERROR(-103, "文件上传错误"),
     EXPORT_DATA_ERROR(104, "数据导出失败"),
+
+    ALIYUN_RESPONSE_FAIL(-501,"阿里云响应失败"),
+    ALIYUN_SMS_LIMIT_CONTROL_ERROR(-502,"短信发送过于频繁"),
+    ALIYUN_SMS_ERROR(-503,"短信发送失败"),
+
+    MOBILE_NULL_ERROR(-202,"手机号不能为空"),
+    MOBILE_ERROR(-203,"手机号不正确"),
     ;
     //相应状态码
     private Integer code;

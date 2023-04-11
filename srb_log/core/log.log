@@ -1,0 +1,59 @@
+2023-03-30 19:47:45 [INFO ] main StartupInfoLogger.java:55 com.yyl.srb.core.ServiceCoreApplication Starting ServiceCoreApplication using Java 1.8.0_201 on LHOL04008 with PID 9760 (D:\IdeaProject\srb\srb\service-core\target\classes started by LHOL04008 in D:\IdeaProject\srb\srb)
+2023-03-30 19:47:45 [INFO ] main SpringApplication.java:646 com.yyl.srb.core.ServiceCoreApplication The following 1 profile is active: "dev"
+2023-03-30 19:47:49 [INFO ] main StartupInfoLogger.java:61 com.yyl.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 4.298 seconds (JVM running for 5.649)
+2023-03-30 19:48:44 [INFO ] main StartupInfoLogger.java:55 com.yyl.srb.core.ServiceCoreApplication Starting ServiceCoreApplication using Java 1.8.0_201 on LHOL04008 with PID 20752 (D:\IdeaProject\srb\srb\service-core\target\classes started by LHOL04008 in D:\IdeaProject\srb\srb)
+2023-03-30 19:48:44 [INFO ] main SpringApplication.java:646 com.yyl.srb.core.ServiceCoreApplication The following 1 profile is active: "dev"
+2023-03-30 19:48:50 [INFO ] main StartupInfoLogger.java:61 com.yyl.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 7.313 seconds (JVM running for 10.529)
+2023-03-31 14:59:48 [INFO ] main StartupInfoLogger.java:55 com.yyl.srb.core.ServiceCoreApplication Starting ServiceCoreApplication using Java 1.8.0_201 on LHOL04008 with PID 9012 (D:\IdeaProject\srb\srb\service-core\target\classes started by LHOL04008 in D:\IdeaProject\srb\srb)
+2023-03-31 14:59:48 [DEBUG] main StartupInfoLogger.java:56 com.yyl.srb.core.ServiceCoreApplication Running with Spring Boot v2.6.4, Spring v5.3.16
+2023-03-31 14:59:48 [INFO ] main SpringApplication.java:646 com.yyl.srb.core.ServiceCoreApplication The following 1 profile is active: "dev"
+2023-03-31 14:59:52 [INFO ] main StartupInfoLogger.java:61 com.yyl.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 4.681 seconds (JVM running for 6.279)
+2023-03-31 15:00:06 [ERROR] http-nio-8110-exec-9 DictServiceImpl.java:74 com.yyl.srb.core.service.impl.DictServiceImpl Redis服务异常：[Ljava.lang.StackTraceElement;@4a19bb9d
+2023-03-31 15:00:06 [INFO ] http-nio-8110-exec-9 DictServiceImpl.java:76 com.yyl.srb.core.service.impl.DictServiceImpl 从数据库中取值
+2023-03-31 15:00:07 [ERROR] http-nio-8110-exec-9 DictServiceImpl.java:90 com.yyl.srb.core.service.impl.DictServiceImpl Redis服务异常：[Ljava.lang.StackTraceElement;@2d8fb0fa
+2023-03-31 15:00:54 [INFO ] main StartupInfoLogger.java:55 com.yyl.srb.core.ServiceCoreApplication Starting ServiceCoreApplication using Java 1.8.0_201 on LHOL04008 with PID 10552 (D:\IdeaProject\srb\srb\service-core\target\classes started by LHOL04008 in D:\IdeaProject\srb\srb)
+2023-03-31 15:00:55 [INFO ] main SpringApplication.java:646 com.yyl.srb.core.ServiceCoreApplication The following 1 profile is active: "dev"
+2023-03-31 15:00:58 [INFO ] main StartupInfoLogger.java:61 com.yyl.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 4.28 seconds (JVM running for 5.624)
+2023-03-31 15:01:15 [ERROR] http-nio-8110-exec-8 DictServiceImpl.java:74 com.yyl.srb.core.service.impl.DictServiceImpl Redis服务异常：[Ljava.lang.StackTraceElement;@234d3418
+2023-03-31 15:01:15 [INFO ] http-nio-8110-exec-8 DictServiceImpl.java:76 com.yyl.srb.core.service.impl.DictServiceImpl 从数据库中取值
+2023-03-31 15:01:16 [ERROR] http-nio-8110-exec-8 DictServiceImpl.java:90 com.yyl.srb.core.service.impl.DictServiceImpl Redis服务异常：[Ljava.lang.StackTraceElement;@47866c68
+2023-03-31 15:03:16 [ERROR] http-nio-8110-exec-2 DictServiceImpl.java:74 com.yyl.srb.core.service.impl.DictServiceImpl Redis服务异常：[Ljava.lang.StackTraceElement;@139c36d9
+2023-03-31 15:03:17 [ERROR] http-nio-8110-exec-2 DictServiceImpl.java:90 com.yyl.srb.core.service.impl.DictServiceImpl Redis服务异常：[Ljava.lang.StackTraceElement;@35d018a3
+2023-03-31 15:04:52 [INFO ] main StartupInfoLogger.java:55 com.yyl.srb.core.ServiceCoreApplication Starting ServiceCoreApplication using Java 1.8.0_201 on LHOL04008 with PID 22752 (D:\IdeaProject\srb\srb\service-core\target\classes started by LHOL04008 in D:\IdeaProject\srb\srb)
+2023-03-31 15:04:52 [INFO ] main SpringApplication.java:646 com.yyl.srb.core.ServiceCoreApplication The following 1 profile is active: "dev"
+2023-03-31 15:04:55 [INFO ] main StartupInfoLogger.java:61 com.yyl.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 4.36 seconds (JVM running for 5.631)
+2023-03-31 15:05:10 [ERROR] http-nio-8110-exec-2 DictServiceImpl.java:74 com.yyl.srb.core.service.impl.DictServiceImpl Redis服务异常：[Ljava.lang.StackTraceElement;@678914a8
+2023-03-31 15:05:10 [INFO ] http-nio-8110-exec-2 DictServiceImpl.java:76 com.yyl.srb.core.service.impl.DictServiceImpl 从数据库中取值
+2023-03-31 15:05:11 [ERROR] http-nio-8110-exec-2 DictServiceImpl.java:90 com.yyl.srb.core.service.impl.DictServiceImpl Redis服务异常：[Ljava.lang.StackTraceElement;@17556202
+2023-03-31 15:12:48 [INFO ] main StartupInfoLogger.java:55 com.yyl.srb.core.ServiceCoreApplication Starting ServiceCoreApplication using Java 1.8.0_201 on LHOL04008 with PID 10056 (D:\IdeaProject\srb\srb\service-core\target\classes started by LHOL04008 in D:\IdeaProject\srb\srb)
+2023-03-31 15:12:48 [INFO ] main SpringApplication.java:646 com.yyl.srb.core.ServiceCoreApplication The following 1 profile is active: "dev"
+2023-03-31 15:12:51 [INFO ] main StartupInfoLogger.java:61 com.yyl.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 4.284 seconds (JVM running for 5.6)
+2023-03-31 15:13:22 [ERROR] http-nio-8110-exec-1 DictServiceImpl.java:74 com.yyl.srb.core.service.impl.DictServiceImpl Redis服务异常：[Ljava.lang.StackTraceElement;@aee5303
+2023-03-31 15:13:22 [INFO ] http-nio-8110-exec-1 DictServiceImpl.java:76 com.yyl.srb.core.service.impl.DictServiceImpl 从数据库中取值
+2023-03-31 15:13:23 [ERROR] http-nio-8110-exec-1 DictServiceImpl.java:90 com.yyl.srb.core.service.impl.DictServiceImpl Redis服务异常：[Ljava.lang.StackTraceElement;@555dbcf
+2023-03-31 15:49:26 [INFO ] main StartupInfoLogger.java:55 com.yyl.srb.core.ServiceCoreApplication Starting ServiceCoreApplication using Java 1.8.0_201 on LHOL04008 with PID 19380 (D:\IdeaProject\srb\srb\service-core\target\classes started by LHOL04008 in D:\IdeaProject\srb\srb)
+2023-03-31 15:49:26 [INFO ] main SpringApplication.java:646 com.yyl.srb.core.ServiceCoreApplication The following 1 profile is active: "dev"
+2023-03-31 15:49:30 [INFO ] main StartupInfoLogger.java:61 com.yyl.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 3.855 seconds (JVM running for 4.979)
+2023-03-31 15:49:56 [ERROR] http-nio-8110-exec-8 DictServiceImpl.java:74 com.yyl.srb.core.service.impl.DictServiceImpl Redis服务异常：[Ljava.lang.StackTraceElement;@5c818b53
+2023-03-31 15:49:56 [INFO ] http-nio-8110-exec-8 DictServiceImpl.java:76 com.yyl.srb.core.service.impl.DictServiceImpl 从数据库中取值
+2023-03-31 15:49:57 [ERROR] http-nio-8110-exec-8 DictServiceImpl.java:90 com.yyl.srb.core.service.impl.DictServiceImpl Redis服务异常：[Ljava.lang.StackTraceElement;@3fc142fe
+2023-03-31 15:59:01 [ERROR] http-nio-8110-exec-3 DictServiceImpl.java:74 com.yyl.srb.core.service.impl.DictServiceImpl Redis服务异常：[Ljava.lang.StackTraceElement;@1a029814
+2023-03-31 15:59:01 [INFO ] http-nio-8110-exec-3 DictServiceImpl.java:76 com.yyl.srb.core.service.impl.DictServiceImpl 从数据库中取值
+2023-03-31 15:59:01 [ERROR] http-nio-8110-exec-3 DictServiceImpl.java:90 com.yyl.srb.core.service.impl.DictServiceImpl Redis服务异常：[Ljava.lang.StackTraceElement;@2f4896f
+2023-04-10 16:48:17 [INFO ] main StartupInfoLogger.java:55 com.yyl.srb.core.ServiceCoreApplication Starting ServiceCoreApplication using Java 1.8.0_201 on LHOL04008 with PID 7712 (D:\IdeaProject\srb\srb\service-core\target\classes started by LHOL04008 in D:\IdeaProject\srb\srb)
+2023-04-10 16:48:17 [INFO ] main SpringApplication.java:646 com.yyl.srb.core.ServiceCoreApplication The following 1 profile is active: "dev"
+2023-04-10 16:48:22 [INFO ] main StartupInfoLogger.java:61 com.yyl.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 6.147 seconds (JVM running for 7.283)
+2023-04-10 17:00:42 [INFO ] main StartupInfoLogger.java:55 com.yyl.srb.core.ServiceCoreApplication Starting ServiceCoreApplication using Java 1.8.0_201 on LHOL04008 with PID 25404 (D:\IdeaProject\srb\srb\service-core\target\classes started by LHOL04008 in D:\IdeaProject\srb\srb)
+2023-04-10 17:00:42 [INFO ] main SpringApplication.java:646 com.yyl.srb.core.ServiceCoreApplication The following 1 profile is active: "dev"
+2023-04-10 17:00:48 [INFO ] main StartupInfoLogger.java:61 com.yyl.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 7.134 seconds (JVM running for 8.998)
+2023-04-10 17:08:38 [INFO ] main StartupInfoLogger.java:55 com.yyl.srb.core.ServiceCoreApplication Starting ServiceCoreApplication using Java 1.8.0_201 on LHOL04008 with PID 11840 (D:\IdeaProject\srb\srb\service-core\target\classes started by LHOL04008 in D:\IdeaProject\srb\srb)
+2023-04-10 17:08:38 [INFO ] main SpringApplication.java:646 com.yyl.srb.core.ServiceCoreApplication The following 1 profile is active: "dev"
+2023-04-10 17:08:44 [INFO ] main StartupInfoLogger.java:61 com.yyl.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 7.042 seconds (JVM running for 9.901)
+2023-04-10 17:52:12 [INFO ] main StartupInfoLogger.java:55 com.yyl.srb.core.ServiceCoreApplication Starting ServiceCoreApplication using Java 1.8.0_201 on LHOL04008 with PID 3384 (D:\IdeaProject\srb\srb\service-core\target\classes started by LHOL04008 in D:\IdeaProject\srb\srb)
+2023-04-10 17:52:12 [INFO ] main SpringApplication.java:646 com.yyl.srb.core.ServiceCoreApplication The following 1 profile is active: "dev"
+2023-04-10 17:52:15 [INFO ] main StartupInfoLogger.java:61 com.yyl.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 3.501 seconds (JVM running for 4.424)
+2023-04-10 18:01:43 [INFO ] main StartupInfoLogger.java:55 com.yyl.srb.sms.ServiceSmsApplication Starting ServiceSmsApplication using Java 1.8.0_201 on LHOL04008 with PID 23320 (D:\IdeaProject\srb\srb\service-sms\target\classes started by LHOL04008 in D:\IdeaProject\srb\srb)
+2023-04-10 18:01:43 [INFO ] main SpringApplication.java:646 com.yyl.srb.sms.ServiceSmsApplication The following 1 profile is active: "dev"
+2023-04-10 19:23:41 [INFO ] main StartupInfoLogger.java:55 com.yyl.srb.core.ServiceCoreApplication Starting ServiceCoreApplication using Java 1.8.0_201 on LHOL04008 with PID 12372 (D:\IdeaProject\srb\srb\service-core\target\classes started by LHOL04008 in D:\IdeaProject\srb\srb)
+2023-04-10 19:23:41 [INFO ] main SpringApplication.java:646 com.yyl.srb.core.ServiceCoreApplication The following 1 profile is active: "dev"
+2023-04-10 19:23:45 [INFO ] main StartupInfoLogger.java:61 com.yyl.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 4.665 seconds (JVM running for 6.639)

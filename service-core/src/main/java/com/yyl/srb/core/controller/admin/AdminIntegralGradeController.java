@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 /**
  * 积分等级管理接口
@@ -53,7 +52,8 @@ public class AdminIntegralGradeController {
     @ApiOperation(value = "根据id删除积分等级", notes = "逻辑删除")
     public R removeById(
             @ApiParam(value = "数据ID", required = true, example = "100")
-            @PathVariable Long id) {
+            @PathVariable Long id
+    ) {
         boolean result = integralGradeService.removeById(id);
         if (result) {
             return R.ok().message("删除成功");
@@ -89,8 +89,8 @@ public class AdminIntegralGradeController {
 
     @ApiOperation("根据ID获取积分等级")
     @GetMapping("/get/{id}")
-    public R getById(@ApiParam(value = "数据ID",required = true)
-                     @PathVariable Long id){
+    public R getById(@ApiParam(value = "数据ID",required = true)//  @RequestParam Long id:前端传一个对象
+                     @PathVariable Long id){//前端传 数值
         IntegralGrade integralGrade = integralGradeService.getById(id);
         if (integralGrade != null){
             return R.ok().data("record",integralGrade);

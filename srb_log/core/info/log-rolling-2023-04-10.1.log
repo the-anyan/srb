@@ -1,0 +1,8 @@
+2023-04-10 17:08:44 [INFO ] main StartupInfoLogger.java:61 com.yyl.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 7.042 seconds (JVM running for 9.901)
+2023-04-10 17:52:12 [INFO ] main StartupInfoLogger.java:55 com.yyl.srb.core.ServiceCoreApplication Starting ServiceCoreApplication using Java 1.8.0_201 on LHOL04008 with PID 3384 (D:\IdeaProject\srb\srb\service-core\target\classes started by LHOL04008 in D:\IdeaProject\srb\srb)
+2023-04-10 17:52:12 [INFO ] main SpringApplication.java:646 com.yyl.srb.core.ServiceCoreApplication The following 1 profile is active: "dev"
+2023-04-10 17:52:15 [INFO ] main StartupInfoLogger.java:61 com.yyl.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 3.501 seconds (JVM running for 4.424)
+2023-04-10 18:01:43 [INFO ] main StartupInfoLogger.java:55 com.yyl.srb.sms.ServiceSmsApplication Starting ServiceSmsApplication using Java 1.8.0_201 on LHOL04008 with PID 23320 (D:\IdeaProject\srb\srb\service-sms\target\classes started by LHOL04008 in D:\IdeaProject\srb\srb)
+2023-04-10 18:01:43 [INFO ] main SpringApplication.java:646 com.yyl.srb.sms.ServiceSmsApplication The following 1 profile is active: "dev"
+2023-04-10 19:23:41 [INFO ] main StartupInfoLogger.java:55 com.yyl.srb.core.ServiceCoreApplication Starting ServiceCoreApplication using Java 1.8.0_201 on LHOL04008 with PID 12372 (D:\IdeaProject\srb\srb\service-core\target\classes started by LHOL04008 in D:\IdeaProject\srb\srb)
+2023-04-10 19:23:41 [INFO ] main SpringApplication.java:646 com.yyl.srb.core.ServiceCoreApplication The following 1 profile is active: "dev"

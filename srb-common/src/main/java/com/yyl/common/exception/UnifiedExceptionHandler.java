@@ -26,7 +26,7 @@ import org.springframework.web.servlet.NoHandlerFoundException;
  * 统一异常处理
  */
 @Slf4j
-@Component//SPring容易自动管理
+@Component//Spring容易自动管理
 @RestControllerAdvice//在controller层通过添加通知，如果使用@ControllerAdvice，则方法上需要添加@ResponseBody
 public class UnifiedExceptionHandler {
     /**
