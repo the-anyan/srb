@@ -57,3 +57,6 @@
 2023-04-10 19:23:41 [INFO ] main StartupInfoLogger.java:55 com.yyl.srb.core.ServiceCoreApplication Starting ServiceCoreApplication using Java 1.8.0_201 on LHOL04008 with PID 12372 (D:\IdeaProject\srb\srb\service-core\target\classes started by LHOL04008 in D:\IdeaProject\srb\srb)
 2023-04-10 19:23:41 [INFO ] main SpringApplication.java:646 com.yyl.srb.core.ServiceCoreApplication The following 1 profile is active: "dev"
 2023-04-10 19:23:45 [INFO ] main StartupInfoLogger.java:61 com.yyl.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 4.665 seconds (JVM running for 6.639)
+2023-04-11 11:01:14 [INFO ] main StartupInfoLogger.java:55 com.yyl.srb.core.ServiceCoreApplication Starting ServiceCoreApplication using Java 1.8.0_201 on LHOL04008 with PID 18396 (D:\IdeaProject\srb\srb\service-core\target\classes started by LHOL04008 in D:\IdeaProject\srb\srb)
+2023-04-11 11:01:14 [INFO ] main SpringApplication.java:646 com.yyl.srb.core.ServiceCoreApplication The following 1 profile is active: "dev"
+2023-04-11 11:01:17 [INFO ] main StartupInfoLogger.java:61 com.yyl.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 4.067 seconds (JVM running for 4.955)

@@ -1,9 +1,9 @@
 server:
-  port: 8120 #服务端口
+port: 8120 #服务端口
 
 spring:
   profiles:
-    active: dev #环境配置
+    active: test #环境配置
   application:
     name: service-sms #服务名
 
@@ -22,10 +22,4 @@ spring:
         min-idle: 0     #最小空闲连接，默认0
 
 #阿里云短信
-aliyun:
-  sms:
-    region-id: cn-hanghzou
-    key-id: LTAI5tGshiJjiWZeWgA5oGb8
-    key-secret: Gfj04TELGn47eHBoVWhGHWF2ijTfjw
-    template-code: SMS_275370808
-    sign-name: codeGril
+
